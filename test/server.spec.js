@@ -6,7 +6,7 @@ const expect = chai.expect;
 
 chai.use(chaiHttp);
 
-// server.listen(4444);
+server.listen(4444);
 
 describe('loopback Workshop', function () {
   this.timeout(5000);
