@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-expressions */
 'use strict';
 const server = require('../server/server');
 const chai = require('chai');
