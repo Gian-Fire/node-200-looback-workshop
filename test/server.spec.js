@@ -1,23 +1,22 @@
+'use strict';
 const server = require('../server/server');
 const chai = require('chai');
 const chaiHttp = require('chai-http');
 const expect = chai.expect;
-'use strict';
 
 chai.use(chaiHttp);
 
 server.listen(4444);
 
-describe('loopback Workshop', function () {
+describe('loopback Workshop', function() {
   this.timeout(5000);
   beforeEach((done) => {
-
     done();
   });
 
   afterEach((done) => {
     done();
-  })
+  });
 
   it('responds to /', (done) => {
     chai.request(server)
@@ -48,5 +47,4 @@ describe('loopback Workshop', function () {
         done();
       });
   });
-
-})
+});
